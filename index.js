@@ -87,7 +87,7 @@ function ERPNext(config) {
                             url: urlString,
                             json: true,
                             jar: self.cookieJar,
-                            body: params,
+                            body: {"data": JSON.stringify(params)},
                             headers: {
                                 'Content-Type':'application/json',
                             }
